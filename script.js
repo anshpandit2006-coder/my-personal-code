@@ -325,13 +325,14 @@ class QuickBitesApp {
     const email = document.getElementById('signupEmail').value;
     const phone = document.getElementById('signupPhone').value;
     const password = document.getElementById('signupPassword').value;
+         const college = document.getElementById('signupCollege').value;
 
-    if (!name || !email || !phone || !password) {
+    if (!name || !email || !phone || !password) || !college {
       this.showToast('Please fill all fields', 'error');
       return;
     }
 
-    this.currentUser = { name: name, email: email, phone: phone };
+    this.currentUser = { name: name, email: email, phone: phone, college: college };
     this.hideAuthModal();
     this.updateUI();
     this.showToast('Account created successfully!', 'success');
