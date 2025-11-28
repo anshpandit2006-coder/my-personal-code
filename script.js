@@ -324,7 +324,7 @@ class QuickBitesApp {
     const password = document.getElementById('loginPassword').value;
          const college = document.getElementById('loginCollege').value;
 
-    if (!email || !password) || !college {
+    if (!email || !password || !college) {
       this.showToast('Please fill all fields', 'error');
       return;
     }
@@ -343,7 +343,7 @@ class QuickBitesApp {
     const password = document.getElementById('signupPassword').value;
          const college = document.getElementById('signupCollege').value;
 
-    if (!name || !email || !phone || !password) || !college) {
+    if (!name || !email || !phone || !password || !college) {
       this.showToast('Please fill all fields', 'error');
       return;
     }
