@@ -322,13 +322,14 @@ class QuickBitesApp {
     e.preventDefault();
     const email = document.getElementById('loginEmail').value;
     const password = document.getElementById('loginPassword').value;
+         const college = document.getElementById('loginCollege').value;
 
-    if (!email || !password) {
+    if (!email || !password) || !college {
       this.showToast('Please fill all fields', 'error');
       return;
     }
 
-    this.currentUser = { name: email.split('@')[0], email: email };
+    this.currentUser = { name: email.split('@')[0], email: email , college: college};
     this.hideAuthModal();
     this.updateUI();
     this.showToast('Login successful!', 'success');
