@@ -24,13 +24,13 @@
     <div class="auth-modal" id="authModal">
         <div class="auth-container">
             <button class="close-auth" id="closeAuth" aria-label="Close authentication modal">
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true">×</span>
             </button>
             <div class="auth-tabs">
                 <button class="auth-tab active" data-tab="login">Login</button>
                 <button class="auth-tab" data-tab="signup">Sign Up</button>
             </div>
-            
+
             <form class="auth-form active" id="loginForm">
                 <div class="form-group">
                     <label for="loginEmail">Email</label>
@@ -47,7 +47,7 @@
                     Login
                 </button>
             </form>
-            
+
             <form class="auth-form" id="signupForm">
                 <div class="form-group">
                     <label for="signupName">Full Name</label>
@@ -113,13 +113,14 @@
             </div>
         </div>
     </header>
+
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <h1>Preorder from College Cafeteria & Save Time</h1>
                 <p>Order during class, pick up during break. No waiting in cafeteria lines. Available across Ghaziabad colleges.</p>
-                
+
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">15-20</span>
@@ -134,7 +135,6 @@
                         <span class="stat-label">Colleges</span>
                     </div>
                 </div>
-
                 <button class="btn btn-primary" id="startOrderBtn">
                     <i class="fas fa-rocket"></i>
                     ORDER NOW
@@ -223,7 +223,7 @@
                 <button class="filter-btn">Food Court</button>
                 <button class="filter-btn">QuickBite</button>
             </div>
-            <div class="cafeterias-grid" id="cafateriasGrid">
+            <div class="cafeterias-grid" id="cafeteriasGrid">
                 <!-- Cafeterias will be loaded dynamically -->
             </div>
         </div>
@@ -266,7 +266,7 @@
                     </div>
                     <h2>Order Confirmed!</h2>
                     <p>Your food will be ready at your selected pickup point</p>
-                    
+
                     <div class="digital-token">
                         <h3>Your Digital Token</h3>
                         <div class="token-number" id="tokenNumber">QB-483726</div>
@@ -275,7 +275,7 @@
                             [QR CODE: <span id="qrToken">QB-483726</span>]
                         </div>
                     </div>
-                    
+
                     <div class="pickup-info">
                         <h3>Pickup Information</h3>
                         <p><strong>College:</strong> <span id="orderCollege">ABES Engineering College</span></p>
@@ -284,7 +284,7 @@
                         <p><strong>Ready by:</strong> <span id="readyTime">12:30 PM</span></p>
                         <p><strong>Order Total:</strong> ₹<span id="orderTotal">0</span></p>
                     </div>
-                    
+
                     <p>Head to the cafeteria during your break to collect your order</p>
                     <button class="btn btn-primary" id="newOrderBtn">
                         <i class="fas fa-plus"></i>
@@ -336,7 +336,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Quick Bites</h3>
+                    <h3>QuickBite</h3>
                     <p>Revolutionizing college cafeteria experience in Ghaziabad. Preorder, save time, focus on what matters.</p>
                     <div class="social-icons">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -362,7 +362,7 @@
                         <li><a href="#" data-college="abesit">ABES Institute of Technology</a></li>
                         <li><a href="#" data-college="iitm">IMS GHAZIABAD</a></li>
                         <li><a href="#" data-college="kiet">KIET Group of Institutions</a></li>
-                        <li><a href="#" data-college="ims">IMS Engineeting College</a></li>
+                        <li><a href="#" data-college="ims">IMS Engineering College</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -379,10 +379,11 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 QuickBite. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>© 2024 QuickBite. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
+
     <script src="script.js" defer></script>
 </body>
 </html>
