@@ -332,6 +332,7 @@ class QuickBitesApp {
     this.currentUser = { name: email.split('@')[0], email: email , college: college};
     this.hideAuthModal();
     this.updateUI();
+     this.updateCart();
     this.showToast('Login successful!', 'success');
   }
 
