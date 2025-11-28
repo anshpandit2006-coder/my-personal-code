@@ -168,7 +168,7 @@ class QuickBitesApp {
   }
 
   renderCafeterias() {
-    const grid = document.getElementById('cafateriasGrid');
+    const grid = document.getElementById('cafeteriasGrid');
     if (!this.currentCollege) return;
     
     grid.innerHTML = this.currentCollege.cafeterias.map(cafeteria => `
