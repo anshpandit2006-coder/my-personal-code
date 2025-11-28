@@ -160,6 +160,20 @@ class QuickBitesApp {
   }
 
   handleCollegeSelect(collegeId) {
+       // Check if user is logged in
+   if (!this.currentUser) {
+     this.showAuthModal('login');
+     return;
+   }
+   
+   // Check if selected college matches user's college
+   if (this.currentUser.college !== collegeId) {
+     const selectedCollege = this.colleges.find(c => c.id === collegeId);
+     const userCollege = this.colleges.find(c => c.id === this.currentUser.college);
+     this.showToast(`Access Denied! You can only order from ${userCollege.name}`, 'error');
+     return;
+   }
+
     this.currentCollege = this.colleges.find(c => c.id === collegeId);
     document.getElementById('collegeCafeteriasTitle').textContent = this.currentCollege.name + ' - Cafeterias';
     this.renderCafeterias();
