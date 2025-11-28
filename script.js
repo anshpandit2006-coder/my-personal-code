@@ -114,6 +114,7 @@ class QuickBitesApp {
     document.getElementById('loginBtn').addEventListener('click', () => this.showAuthModal('login'));
     document.getElementById('signupBtn').addEventListener('click', () => this.showAuthModal('signup'));
     document.getElementById('logoutBtn').addEventListener('click', () => this.handleLogout());
+        document.getElementById('closeAuth').addEventListener('click', () => this.hideAuthModal());
 
     // Navigation
     document.getElementById('startOrderBtn').addEventListener('click', () => this.scrollToSection('colleges'));
