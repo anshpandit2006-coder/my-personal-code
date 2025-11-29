@@ -451,7 +451,7 @@ class QuickBitesApp {
   }
 
   handleNewOrder() {
-    this.showSection('collegeSelection');
+    this.showSection('colleges');
     this.scrollToSection('colleges');
   }
 
